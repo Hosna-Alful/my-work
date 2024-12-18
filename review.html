@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews Section</title>
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
+  <div class="reviews-section">
+    <!-- Left Column: Display Reviews -->
+    <div class="reviews-display">
+      <h2>Patient Reviews</h2>
+      <div class="review-card">
+        <h3>Dr. John Doe</h3>
+        <p><strong>Specialty:</strong> Cardiologist</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p><strong>Patient:</strong> Jane Smith</p>
+        <p>"Dr. Doe was incredibly professional and thorough."</p>
+        <button class="feedback-btn">Provide Feedback</button>
+      </div>
+      <!-- Add more review cards as needed -->
+    </div>
+
+    <!-- Right Column: Write a Review -->
+    <div class="review-form">
+      <h2>Write a Review</h2>
+      <form id="reviewForm">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+        <label for="rating">Rating:</label>
+        <div class="star-rating">
+          <span data-value="1">⭐</span>
+          <span data-value="2">⭐</span>
+          <span data-value="3">⭐</span>
+          <span data-value="4">⭐</span>
+          <span data-value="5">⭐</span>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="review.js"></script>
+</body>
+</html>

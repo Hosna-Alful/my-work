@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: 60px;
+        }
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #013d5a;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            display: inline-block;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: #013d5a;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="#booking">Appointments</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#sighnin">Sign-Up</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </header>
+</body>
+</html>
